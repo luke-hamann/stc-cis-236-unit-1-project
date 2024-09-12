@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-
+﻿@using System
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="~/css/main.css" />
 </head>
 <body>
-    @RenderBody()
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-action="Index">Index</a></li>
+                <li><a asp-action="About">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>@RenderBody()</main>
+    <footer>
+        <p>&copy; @DateTime.Now.Year Luke Hamann</p>
+    </footer>
 </body>
 </html>

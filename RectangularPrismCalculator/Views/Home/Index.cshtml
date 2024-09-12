@@ -8,26 +8,32 @@
     <div>
         <label asp-for="Length">Length:</label>
         <input asp-for="Length" autofocus />
+        <span>units</span>
     </div>
     <div>
         <label asp-for="Width">Width:</label>
         <input asp-for="Width" />
+        <span>units</span>
     </div>
     <div>
         <label asp-for="Height">Height:</label>
         <input asp-for="Height" />
+        <span>units</span>
     </div>
     <div>
         <label>Volume:</label>
         <label>@ViewBag.Volume</label>
+        <span>units<sup>3</sup></span>
     </div>
     <div>
         <label>Surface Area:</label>
         <label>@ViewBag.SurfaceArea</label>
+        <span>units<sup>2</sup></span>
     </div>
     <div>
         <label>Diagonal:</label>
         <label>@ViewBag.Diagonal</label>
+        <span>units</span>
     </div>
     <div>
         <input type="submit" value="Submit" />
