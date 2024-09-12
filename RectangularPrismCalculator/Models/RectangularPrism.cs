@@ -1,15 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-/*
+﻿/*
     Name: Luke Hamann
     Date: 2024-09-12
     Purpose: The RectangularPrism class represents a rectangular prism. The
-             Length, Width, and Height properties are used to set and read the
+             Length, Width, and Height properties are used to get and set the
              dimensions of the prism, protected by required and range
              attributes. The Volume, SurfaceArea, and Diagonal properties are
              read-only and calculate their respective values based on the
              dimensions.
 */
+using System.ComponentModel.DataAnnotations;
+
 namespace RectangularPrismCalculator.Models
 {
     public class RectangularPrism
