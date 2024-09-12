@@ -18,16 +18,16 @@
         <input asp-for="Height" />
     </div>
     <div>
-        <label asp-for="Volume">Volume:</label>
-        <input asp-for="Volume" readonly />
+        <label>Volume:</label>
+        <label>@ViewBag.Volume</label>
     </div>
     <div>
-        <label asp-for="SurfaceArea">Surface Area:</label>
-        <input asp-for="SurfaceArea" readonly />
+        <label>Surface Area:</label>
+        <label>@ViewBag.SurfaceArea</label>
     </div>
     <div>
-        <label asp-for="Diagonal">Diagonal:</label>
-        <input asp-for="Diagonal" readonly />
+        <label>Diagonal:</label>
+        <label>@ViewBag.Diagonal</label>
     </div>
     <div>
         <input type="submit" value="Submit" />
