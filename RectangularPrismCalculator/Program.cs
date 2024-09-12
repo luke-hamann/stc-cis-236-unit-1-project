@@ -1,3 +1,8 @@
+/*
+    Name: Luke Hamann
+    Date: 2024-09-12
+    Purpose: This builds, configures, and runs the application object.
+*/
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
