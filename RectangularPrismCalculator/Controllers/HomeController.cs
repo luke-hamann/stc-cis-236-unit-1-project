@@ -23,5 +23,11 @@ namespace RectangularPrismCalculator.Controllers
 
             return View(prism);
         }
+
+        [HttpGet]
+        public IActionResult About()
+        {
+            return View();
+        }
     }
 }
