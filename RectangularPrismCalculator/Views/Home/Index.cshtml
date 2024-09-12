@@ -3,8 +3,8 @@
     ViewBag.Title = "Rectangular Prism Calculator";
 }
 <h1>@ViewBag.Title</h1>
-<div asp-validation-summary="All" class="errors"></div>
 <form asp-action="Index" method="post">
+    <div asp-validation-summary="All" class="errors"></div>
     <div>
         <label asp-for="Length">Length:</label>
         <input asp-for="Length" autofocus />
@@ -22,21 +22,21 @@
     </div>
     <div>
         <label>Volume:</label>
-        <label>@ViewBag.Volume</label>
+        <input value="@ViewBag.Volume" disabled />
         <span>units<sup>3</sup></span>
     </div>
     <div>
         <label>Surface Area:</label>
-        <label>@ViewBag.SurfaceArea</label>
+        <input value="@ViewBag.SurfaceArea" disabled />
         <span>units<sup>2</sup></span>
     </div>
     <div>
         <label>Diagonal:</label>
-        <label>@ViewBag.Diagonal</label>
+        <input value="@ViewBag.Diagonal" disabled />
         <span>units</span>
     </div>
-    <div>
-        <input type="submit" value="Submit" />
+    <div class="button_container">
+        <button type="submit">Submit</button>
         <a asp-action="Index">Clear</a>
     </div>
 </form>
