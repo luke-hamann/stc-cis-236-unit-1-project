@@ -1,0 +1,36 @@
+﻿@model RectangularPrism
+@{
+    ViewBag.Title = "Rectangular Prism Calculator";
+}
+<h1>@ViewBag.Title</h1>
+<div asp-validation-summary="All" class="errors"></div>
+<form asp-action="Index" method="post">
+    <div>
+        <label asp-for="Length">Length:</label>
+        <input asp-for="Length" autofocus />
+    </div>
+    <div>
+        <label asp-for="Width">Width:</label>
+        <input asp-for="Width" />
+    </div>
+    <div>
+        <label asp-for="Height">Height:</label>
+        <input asp-for="Height" />
+    </div>
+    <div>
+        <label asp-for="Volume">Volume:</label>
+        <input asp-for="Volume" readonly />
+    </div>
+    <div>
+        <label asp-for="SurfaceArea">Surface Area:</label>
+        <input asp-for="SurfaceArea" readonly />
+    </div>
+    <div>
+        <label asp-for="Diagonal">Diagonal:</label>
+        <input asp-for="Diagonal" readonly />
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+        <a asp-action="Index">Clear</a>
+    </div>
+</form>
