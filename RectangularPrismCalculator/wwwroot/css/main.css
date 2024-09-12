@@ -4,8 +4,8 @@
     Name: Luke Hamann
     Date: 2024-09-12
     Purpose: This is the main CSS for all the pages of the application. It
-             provides a responsive, minimal, left-aligned page layout with sans
-             fonts and dark mode support.
+             provides a responsive, minimal, left-aligned page layout with
+             sans-serif fonts and dark mode support.
 */
 
 :root {
@@ -23,28 +23,16 @@ body {
     max-width: 40rem;
 }
 
-header {
+header, main, footer {
     padding: 1rem;
 }
 
-header nav ul {
+ul {
     padding-left: 1rem;
-}
-
-main {
-    margin: 1rem;
 }
 
 main h1, main p, main ul {
     margin: 1rem 0;
-}
-
-main ul {
-    padding-left: 1rem;
-}
-
-footer {
-    padding: 1rem;
 }
 
 /* Forms */
@@ -53,7 +41,7 @@ form {
     width: fit-content;
 }
 
-form > div {
+form > * {
     margin: 1rem 0;
 }
 
@@ -66,15 +54,15 @@ label {
 }
 
 input {
-    min-width: 12rem;
+    width: 12rem;
 }
 
-input[disabled] {
-    text-align: right;
-}
-
-.button_container {
+.center {
     text-align: center;
+}
+
+.right {
+    text-align: right;
 }
 
 .errors {

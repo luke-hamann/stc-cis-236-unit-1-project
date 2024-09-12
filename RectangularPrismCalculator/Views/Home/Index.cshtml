@@ -4,7 +4,7 @@
     Purpose: This view provides the rectangular prism calculator form of the
              application, bound to the RectangularPrism class. The form
              includes editable fields for the length, width, and height,
-             read-only fields for the volume, surface area, and diagonal, an
+             disabled fields for the volume, surface area, and diagonal, an
              area for validation errors, a submit button, and a clear button.
 *@
 @model RectangularPrism
@@ -31,20 +31,20 @@
     </div>
     <div>
         <label>Volume:</label>
-        <input value="@ViewBag.Volume" disabled />
+        <input value="@ViewBag.Volume" disabled class="right" />
         <span>units<sup>3</sup></span>
     </div>
     <div>
         <label>Surface Area:</label>
-        <input value="@ViewBag.SurfaceArea" disabled />
+        <input value="@ViewBag.SurfaceArea" disabled class="right" />
         <span>units<sup>2</sup></span>
     </div>
     <div>
         <label>Diagonal:</label>
-        <input value="@ViewBag.Diagonal" disabled />
+        <input value="@ViewBag.Diagonal" disabled class="right" />
         <span>units</span>
     </div>
-    <div class="button_container">
+    <div class="center">
         <button type="submit">Submit</button>
         <a asp-action="Index">Clear</a>
     </div>
