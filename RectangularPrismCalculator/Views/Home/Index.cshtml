@@ -31,17 +31,17 @@
     </div>
     <div>
         <label>Volume:</label>
-        <input value="@ViewBag.Volume" disabled class="right" />
+        <input value="@ViewBag.Volume?.ToString("n2")" disabled class="right" />
         <span>units<sup>3</sup></span>
     </div>
     <div>
         <label>Surface Area:</label>
-        <input value="@ViewBag.SurfaceArea" disabled class="right" />
+        <input value="@ViewBag.SurfaceArea?.ToString("n2")" disabled class="right" />
         <span>units<sup>2</sup></span>
     </div>
     <div>
         <label>Diagonal:</label>
-        <input value="@ViewBag.Diagonal" disabled class="right" />
+        <input value="@ViewBag.Diagonal?.ToString("n2")" disabled class="right" />
         <span>units</span>
     </div>
     <div class="center">

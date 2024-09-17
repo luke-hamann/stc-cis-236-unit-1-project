@@ -24,9 +24,9 @@ namespace RectangularPrismCalculator.Controllers
         {
             if (ModelState.IsValid)
             {
-                ViewBag.Volume = prism.Volume!.Value.ToString("n2");
-                ViewBag.SurfaceArea = prism.SurfaceArea!.Value.ToString("n2");
-                ViewBag.Diagonal = prism.Diagonal!.Value.ToString("n2");
+                ViewBag.Volume = prism.Volume;
+                ViewBag.SurfaceArea = prism.SurfaceArea;
+                ViewBag.Diagonal = prism.Diagonal;
             }
 
             return View(prism);
